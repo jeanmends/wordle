@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background-color: #0b1c1c;
+}
+h1 {
+    text-align: center;
+    color: #f5f5f5;
+}
+
+#game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.letter-box {
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #040D12;
+    color: #f5f5f5;
+}
+
+.filled-box {
+    border: 2px solid black;
+}
+
+.letter-row {
+    display: flex;
+}
+
+#keyboard-cont {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #keyboard-cont div {
+    display: flex;
+  }
+  
+  .second-row {
+    margin: 0.5rem 0;
+  }
+  
+  .keyboard-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #111111;
+    color:#f5f5f5;
+    border: 1px solid grey;
+    
+  }
+  .keyboard-button:hover{
+    background-color: #040D12;
+  }
+.cicle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 50%;
+  right: 20px;
+  
+}
+.cicle-teste{
+  background-color: rgba(207, 207, 207, 0.1);
+}
+.cicle:hover{
+  background-color: rgba(207, 207, 207, 0.1);
+  
+}
+.edit-pen{
+    width: 25px;
+}
+
+.painel-custom{
+  background-color: #121212;
+  border: 1px solid #f5f5f5;
+  border-radius: 3px;
+  width: 200px;
+  padding: 5px;
+  position: absolute;
+  visibility: hidden;
+  right: 20px;
+  top: 10%;
+}
+
+.painel-custom-inside > h3,h4{
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.painel-custom-inside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f5f5f5;
+}
+
+.selection-bg-type label input{
+  position: absolute;
+  top:-80px;
+  
+}
+
+.selection-bg-type label {
+  float:left;
+  width:60px;
+  margin:4px;
+  background-color:#f5f5f5;
+  border-radius:5px;
+  
+  color: #121212;
+}
+
+.selection-bg-type label span {
+  text-align:center;
+  font-size: 16px;
+  padding:2px 0px;
+  display:block;
+  
+}
+
+.selection-bg-type input:checked + span {
+  background-color:#404040;
+  border:1px solid #404040;
+  color:#f5f5f5;
+  border-radius:4px;
+}
+
+.selection-bg-type{
+  display: flex;
+  justify-content: center;
+}
+
+.bg-type-color, .bg-type-image{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  display: none;
+}
+
+.upload-image{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 2px;
+  background-color: #0b1c1c;
+}
+
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+.random-bottom{
+  color:#040D12;
+  outline: 1px solid #f5f5f5;
+  padding: 2px;
+  cursor: pointer;
+}
+.random-bottom:hover{
+  background-color: rgba(207, 207, 207, 0.1);
+}
